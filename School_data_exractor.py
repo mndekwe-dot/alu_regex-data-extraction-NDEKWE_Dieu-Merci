@@ -10,7 +10,9 @@ dangerous_patterns = [
     "javascript:",
     "eval(",
     "DROP TABLE",
+    "DELETE FROM",
     "../"
+    "<?php"
 ]
 
 # REGEX PATTERNS (REAL-WORLD FORMATS)

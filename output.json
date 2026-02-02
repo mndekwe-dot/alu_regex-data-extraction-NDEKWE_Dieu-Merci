@@ -1,15 +1,45 @@
 {
   "status": "SUCCESS",
   "data": {
-    "emails": [],
-    "urls": [],
-    "phones": [
-      "0728650692"
+    "emails": [
+      "gr***@gmail.com",
+      "pa***@greenhills.rw"
     ],
-    "credit_cards": [],
-    "times": [],
-    "hashtags": [],
-    "currency": []
+    "urls": [
+      "https://school.rw/payment/receipt/2025/001",
+      "https://portal.greenhills.rw",
+      "https://classroom.google.com/c/567890"
+    ],
+    "phones": [],
+    "credit_cards": [
+      "****-****-****-9012"
+    ],
+    "times": [
+      "08:00 AM",
+      "1:30 PM",
+      "08:00",
+      "11:00 AM",
+      "11:00",
+      "3:00 PM",
+      "09:30",
+      "3:00",
+      "14:00",
+      "12:30 PM",
+      "12:30",
+      "09:30 AM",
+      "1:30"
+    ],
+    "hashtags": [
+      "#Education2025",
+      "#AthleticsChampionship",
+      "#GreenHillsSchool"
+    ],
+    "currency": [
+      "RF 25,000",
+      "RWF 190,000",
+      "RWF 150,000",
+      "RWF 15,000.00"
+    ]
   },
-  "total_found": 1
+  "total_found": 26
 }

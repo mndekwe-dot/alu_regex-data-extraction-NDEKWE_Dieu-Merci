@@ -1,0 +1,47 @@
+========================================
+STUDENT REGISTRATION FORM - SAMPLE
+Green Hills Secondary School
+========================================
+
+STUDENT INFORMATION
+-------------------
+Name: MUKAMANA Grace
+Email: grace.mukamana@gmail.com
+Phone: 0788234567
+Guardian: 0791345678
+
+CLASS SCHEDULE
+--------------
+Period 1: Math - 08:00 AM
+Period 2: Science - 09:30 AM
+Period 3: English - 11:00 AM
+Lunch Break: 12:30 PM - 1:30 PM
+Period 4: History - 14:00
+
+FEE PAYMENT
+-----------
+Tuition: RWF 150,000
+Books: RF 25,000
+Uniform: RWF 15,000.00
+Total: RWF 190,000
+
+Payment Card: 4532-1234-5678-9012
+Receipt: https://school.rw/payment/receipt/2025/001
+
+SCHOOL PORTAL
+-------------
+Access: https://portal.greenhills.rw
+Classroom: https://classroom.google.com/c/567890
+
+PARENT-TEACHER MEETING
+----------------------
+Date: February 15, 2025
+Time: 3:00 PM
+Contact: parent.affairs@greenhills.rw
+RSVP: 0788999111
+
+SCHOOL EVENTS
+-------------
+Follow updates: #GreenHillsSchool #Education2025
+Sports Day: #AthleticsChampionship
+END

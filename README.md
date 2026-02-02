@@ -7,7 +7,7 @@ A security-aware text processing system for extracting student records, fee info
 
 ## 📌 What I Did
 
-Built a **regex-based data extraction tool** for a school management system that:
+Built a **regex-based data extraction tool** in python for a school management system that:
 
 1. **Extracts 7 data types** from school forms:
    - Emails (student, parent, staff)
@@ -175,3 +175,4 @@ For questions about this implementation:
 - Currency **MUST** start with `RWF` or `RF`
 - All dangerous patterns are rejected automatically
 - Sensitive data is always masked in output
+- The system is written in python
