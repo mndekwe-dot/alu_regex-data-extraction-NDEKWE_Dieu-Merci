@@ -1,0 +1,16 @@
+{
+  "status": "SUCCESS",
+  "data": {
+    "emails": [
+      "nd***@gmail.com"
+    ],
+    "urls": [],
+    "phones": [],
+    "credit_cards": [],
+    "times": [],
+    "html_tags": [],
+    "hashtags": [],
+    "currency": []
+  },
+  "total_found": 1
+}
