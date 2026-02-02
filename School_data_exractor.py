@@ -1,6 +1,8 @@
 import re
 import json
 
+# SECURITY CONFIGURATION
+
 max_input_size = 50000
 
 dangerous_patterns = [
@@ -11,6 +13,8 @@ dangerous_patterns = [
     "../"
 ]
 
+# REGEX PATTERNS (REAL-WORLD FORMATS)
+
 EMAIL_PATTERN = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
 URL_PATTERN = r'https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}[^\s]*'
 PHONE_PATTERN = r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}'
@@ -20,6 +24,8 @@ TIME_24H_PATTERN = r'\b(?:[01]?\d|2[0-3]):[0-5]\d\b'
 HTML_PATTERN = r'<[^>]+>'
 HASHTAG_PATTERN = r'#[a-zA-Z0-9_]+'
 CURRENCY_PATTERN = r'\$[\d,]+(?:\.\d{2})?'
+
+# SECURITY CHECK (DEFENSIVE PROGRAMMING)
 
 def is_safe_input(text):
     if not text or len(text.strip()) == 0:
@@ -34,6 +40,7 @@ def is_safe_input(text):
 
     return True
 
+# DATA MASKING FUNCTIONS(Hiding sensitive data)
 def mask_email(email):
     name, domain = email.split("@")
     return f"{name[:2]}***@{domain}"
@@ -58,6 +65,7 @@ def process_line(line, store):
     store["hashtags"].extend(re.findall(HASHTAG_PATTERN, line))
     store["currency"].extend(re.findall(CURRENCY_PATTERN, line))
 
+# MAIN PROGRAM
 def main():
     print("=" * 70)
     print("REGEX-BASED RAW TEXT DATA EXTRACTION For School SYSTEM")
