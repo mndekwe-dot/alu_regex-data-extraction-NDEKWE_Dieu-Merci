@@ -1,14 +1,13 @@
 {
   "status": "SUCCESS",
   "data": {
-    "emails": [
-      "nd***@gmail.com"
-    ],
+    "emails": [],
     "urls": [],
-    "phones": [],
+    "phones": [
+      "0728650692"
+    ],
     "credit_cards": [],
     "times": [],
-    "html_tags": [],
     "hashtags": [],
     "currency": []
   },

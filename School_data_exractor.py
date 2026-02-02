@@ -17,13 +17,12 @@ dangerous_patterns = [
 
 EMAIL_PATTERN = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
 URL_PATTERN = r'https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}[^\s]*'
-PHONE_PATTERN = r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}'
+PHONE_PATTERN = r'^07[2389]\d{7}$'
 CARD_PATTERN = r'\d{4}[-\s]?\d{4}[-\s]?\d{4}[-\s]?\d{4}'
 TIME_12H_PATTERN = r'\d{1,2}:\d{2}\s?(?:AM|PM|am|pm)'
 TIME_24H_PATTERN = r'\b(?:[01]?\d|2[0-3]):[0-5]\d\b'
-HTML_PATTERN = r'<[^>]+>'
 HASHTAG_PATTERN = r'#[a-zA-Z0-9_]+'
-CURRENCY_PATTERN = r'\$[\d,]+(?:\.\d{2})?'
+CURRENCY_PATTERN = r'(?i)(?:RWF|RF)\s?\d+(?:,\d{3})*(?:\.\d{2})?'
 
 # SECURITY CHECK (DEFENSIVE PROGRAMMING)
 
@@ -61,7 +60,6 @@ def process_line(line, store):
         re.findall(TIME_12H_PATTERN, line) +
         re.findall(TIME_24H_PATTERN, line)
     )
-    store["html_tags"].extend(re.findall(HTML_PATTERN, line))
     store["hashtags"].extend(re.findall(HASHTAG_PATTERN, line))
     store["currency"].extend(re.findall(CURRENCY_PATTERN, line))
 
@@ -78,7 +76,6 @@ def main():
         "phones": [],
         "credit_cards": [],
         "times": [],
-        "html_tags": [],
         "hashtags": [],
         "currency": []
     }
